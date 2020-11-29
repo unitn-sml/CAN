@@ -1,0 +1,6 @@
+# shape of the stuff
+shape         [                   4    ,  3	]
+
+# this does this
+X.1.1 >>    X.2.2
+X3.1 >>    X.2.2

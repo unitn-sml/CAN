@@ -1,0 +1,24 @@
+# shape of the stuff
+# shape [14, 2]
+# shape [28]
+
+# constraint of reachability on the 2 rightmost columns of the level
+# X0.0 | X1.0 | X2.0 | X3.0 | X4.0 | X5.0 | X6.0 | X7.0 | X8.0 | X9.0 | X10.0 | X11.0 | X12.0 | X0.1 | X1.1 | X2.1 | X3.1 | X4.1 | X5.1 | X6.1 | X7.1 | X8.1 | X9.1 | X10.1 | X11.1 | X12.1
+# X0 | X1 | X2 | X3 | X4 | X5 | X6 | X7 | X8 | X9 | X10 | X11 | X12 | X13 | X14 | X15 | X16 | X17 | X18 | X19 | X20 | X21 | X22 | X23 | X24 | X25 | X26 | X27
+
+# X0 & X1 & X2 & X3 & X4 & X5 & X6 & X7 & X8 & X9 & X10 & X11 & X12 & X13 & X14 & X15 & X16 & X17 & X18 & X19 & X20 & X21 & X22 & X23 & X24 & X25 & X26 & X27
+# ~X13 & ~X27
+
+shape [12]
+
+# left side
+# And(~X0,X1,X4,~X5) | And(~X4,X5,X8,~X9)
+
+# right side
+# And(~X2,X3,X6,~X7) | And(~X6,X7,X10,~X11)
+
+# left side
+And(X0, ~X2)
+
+# right side
+And(X1, ~X3)

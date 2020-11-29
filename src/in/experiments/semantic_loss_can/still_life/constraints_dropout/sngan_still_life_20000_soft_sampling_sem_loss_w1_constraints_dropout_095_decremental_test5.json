@@ -1,0 +1,43 @@
+{
+    "DATASET_TYPE": "MNIST_STILL_LIFE_20000",
+    "SHAPE": [28, 28, 1],
+    "DATASET_SEED": 42,
+    "DATASET_SIZE": 20000,
+    "TRAINING_TEST_VALIDATION_SPLITS": [
+        18000,
+        2000,
+        0
+    ],
+    "ANN_SEED": 0,
+    "GENERATOR": "Gan28GumbleBinomialGenerator2",
+    "DISCRIMINATOR": "Sn28Discriminator",
+    "GENERATOR_LOSS":[["GanGeneratorLoss", 1.0], ["SemanticLoss_still_life", 1.0]],
+    "DISCRIMINATOR_LOSS": "GanDiscriminatorLoss",
+    "DISCRIMINATOR_SOLVER": "DiscriminatorAdamSolver",
+    "GENERATOR_SOLVER": "GeneratorAdamSolver",
+    "GENERATOR_STATISTICS": [
+        "BinomialGeneratorStatistics",
+        "GeneratorLossStatistics"
+    ],
+    "DISCRIMINATOR_STATISTICS": [
+        "DiscriminatorLossStatistics"
+    ],
+    "BATCH_SIZE": 64,
+    "LEARNING_RATE": 1e-4,
+    "NUM_ITER_GENERATOR": 1,
+    "NUM_ITER_DISCRIMINATOR": 1,
+    "LEAKINESS": 0.2,
+    "z_dim": 64,
+    "h_dim": 32,
+    "LEARNING_EPOCHS": 500,
+    "EVAL_NOISE_SEED": 42,
+    "COMPUTABLES": [
+        "RandomUniform"
+    ],
+    "EVAL_IMAGES": 20,
+    "HARD_SAMPLING": false,
+    "SEMANTIC_LOSS_INPUT_IS_PROBABILITIES": true,
+    "SEMANTIC_LOSS_INCREMENTAL": true,
+    "SEMANTIC_LOSS_CONSTRAINTS_DROPOUT_RATE": 0.95,
+    "SEMANTIC_LOSS_CONSTRAINTS_DECREMENTAL": true
+}

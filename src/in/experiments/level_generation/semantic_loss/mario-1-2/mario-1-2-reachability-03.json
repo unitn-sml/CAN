@@ -1,0 +1,55 @@
+{
+    "DATASET_TYPE": "level_generation",
+    "DATASET_NAME": "supermariobros",
+    "GAME_NAME": "Super Mario Bros",
+    "SPECIFIC_LEVEL": "mario-1-2.txt",
+    "SHAPE": [
+        14,
+        28,
+        13
+    ],
+    "DATASET_SEED": 42,
+    "TRAINING_TEST_VALIDATION_SPLITS": [
+        131,
+        0,
+        0
+    ],
+    "ANN_SEED": 1337,
+    "GENERATOR": "DCGAN_G",
+    "DISCRIMINATOR": "DCGAN_D",
+    "GENERATOR_LOSS": [
+        ["DCGANLossGenerator", 0.7],
+        ["SemanticLoss_reachability", 0.3]
+    ],
+    "DISCRIMINATOR_LOSS": "DCGANLossDiscriminator",
+    "GENERATOR_SOLVER": "LevelGeneratorAdamSolver",
+    "DISCRIMINATOR_SOLVER": "LevelDiscriminatorAdamSolver",
+    "GENERATOR_STATISTICS": [
+        "LevelGeneratorStatistics",
+        "LevelGeneratorLossStatistics",
+        "LevelGeneratorReachabilityStatistics",
+        "WMC_reachability",
+        "VNU_reachability"
+    ],
+    "DISCRIMINATOR_STATISTICS": [
+        "LevelDiscriminatorStatistics",
+        "LevelDiscriminatorLossStatistics"
+    ],
+    "BATCH_SIZE": 32,
+    "NUM_BGAN_SAMPLES": 1,
+    "LEARNING_RATE": 0.00005,
+    "NUM_ITER_GEN": 1,
+    "NUM_ITER_DISCR": 1,
+    "z_dim": 32,
+    "LEARNING_EPOCHS": 5000,
+    "EVAL_NOISE_SEED": 42,
+    "EVAL_SAMPLES": 16,
+    "LEAKINESS": 0.2,
+    "COMPUTABLES": [],
+    "ISIZE": 32,
+    "NUMBER_FILTERS_GENERATOR": 64,
+    "NUMBER_FILTERS_DISCRIMINATOR": 64,
+    "CLAMP_HIGH": 0.01,
+    "CLAMP_LOW": -0.01,
+    "WGAN":true
+}

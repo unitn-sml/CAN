@@ -1,0 +1,7 @@
+# simplified version of the reachability
+
+shape [4]
+
+And(X0,X1,X2,X3)
+
+
