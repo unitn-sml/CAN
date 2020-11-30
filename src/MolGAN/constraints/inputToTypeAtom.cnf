@@ -1,0 +1,46 @@
+c This file was generated with the constraints_to_cnf module in this project.
+c Starting from file 'constraints/inputToTypeAtom.txt'.
+c There are 40 variables present in the constraints, and 50 total variables, given by the shape [10, 5].
+c
+p cnf 50 40
+2 -7 0
+2 -12 0
+2 -17 0
+2 -22 0
+2 -27 0
+2 -32 0
+2 -37 0
+2 -42 0
+2 -47 0
+3 -8 0
+3 -13 0
+3 -18 0
+3 -23 0
+3 -28 0
+3 -33 0
+3 -38 0
+3 -43 0
+3 -48 0
+4 -9 0
+4 -14 0
+4 -19 0
+4 -24 0
+4 -29 0
+4 -34 0
+4 -39 0
+4 -44 0
+4 -49 0
+5 -10 0
+5 -15 0
+5 -20 0
+5 -25 0
+5 -30 0
+5 -35 0
+5 -40 0
+5 -45 0
+5 -50 0
+7 12 17 22 27 32 37 42 47 -2 0
+8 13 18 23 28 33 38 43 48 -3 0
+9 14 19 24 29 34 39 44 49 -4 0
+10 15 20 25 30 35 40 45 50 -5 0
+
