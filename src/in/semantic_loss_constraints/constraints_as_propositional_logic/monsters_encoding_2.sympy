@@ -1,0 +1,7 @@
+# assert monster up implies solid block below
+
+shape [12]
+
+# Equivalent to Implies(X0, Or(X9, X10, X11, X12, X13, X14, X15))
+
+Implies(X0, ~Or(X7 | X8 | X9 | X10 | X11))

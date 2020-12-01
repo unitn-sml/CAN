@@ -1,0 +1,44 @@
+c This file was generated with the constraints_to_cnf module in this project.
+c Starting from file 'still_life/still_life_corners.txt'.
+c There are 4 variables present in the constraints, and 4 total variables, given by the shape [4].
+c
+p cnf 4 38
+2 3 -1 0
+2 4 -1 0
+3 4 -1 0
+2 -1 -2 0
+3 -1 -3 0
+4 -1 -4 0
+2 3 4 -1 0
+2 3 -1 -2 0
+2 3 -1 -3 0
+2 3 -1 -4 0
+2 4 -1 -2 0
+2 4 -1 -3 0
+2 4 -1 -4 0
+3 4 -1 -2 0
+3 4 -1 -3 0
+3 4 -1 -4 0
+1 -2 -3 -4 0
+2 -1 -2 -3 0
+2 -1 -2 -4 0
+3 -1 -2 -3 0
+3 -1 -3 -4 0
+4 -1 -2 -4 0
+4 -1 -3 -4 0
+2 3 4 -1 -2 0
+2 3 4 -1 -3 0
+2 3 4 -1 -4 0
+2 3 -1 -2 -3 0
+2 3 -1 -2 -4 0
+2 3 -1 -3 -4 0
+2 4 -1 -2 -3 0
+2 4 -1 -2 -4 0
+2 4 -1 -3 -4 0
+3 4 -1 -2 -3 0
+3 4 -1 -2 -4 0
+3 4 -1 -3 -4 0
+2 -1 -2 -3 -4 0
+3 -1 -2 -3 -4 0
+4 -1 -2 -3 -4 0
+

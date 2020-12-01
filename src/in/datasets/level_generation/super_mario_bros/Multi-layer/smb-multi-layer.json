@@ -1,0 +1,43 @@
+{"tiles":
+      {"structural-tiles" : {
+                  "-" : ["empty","passable"],
+                  "|" : ["flagpole","passable"],
+                  "g" : ["goomba","enemy","moving","damaging"],
+                  "?" : ["question block","coin question block","solid"],
+                  "B" : ["brick","solid","breakable"],
+                  "M" : ["question block","power-up question block","solid"],
+                  "#" : ["solid","ground"],
+                  "+" : ["solid","extra life block","brick"],
+                  "[" : ["solid","left-top upward pipe","pipe","upward pipe"],
+                  "]" : ["solid","right-top upward pipe","pipe","upward pipe"],
+                  "O" : ["solid","brick","multi-coin brick"],
+                  "*" : ["solid","star block","brick"],
+                  "p" : ["solid","left upward pipe","pipe","upward pipe"],
+                  "P" : ["solid","right upward pipe","pipe","upward pipe"],
+                  "k" : ["koopa","enemy","moving","damaging"],
+                  "H" : ["solid","beanstalk block","brick"],
+                  "V" : ["upward piranha plant","piranha plant","enemy","moving","hazard","damaging"],
+                  "K" : ["parakoopa","enemy","moving","damaging"],
+                  "Y" : ["solid","spring top","spring"],
+                  "y" : ["solid","spring bottom","spring"],
+                  "h" : ["hammer bro","enemy","moving","damaging"],
+                  "o" : ["coin","passable","collectable"],
+                  "l" : ["lakitu","enemy","moving","damaging"],
+                  "C" : ["Cannon top","cannon","solid","hazard"],
+                  "c" : ["Cannon bottom","cannon","solid"],
+                  "t" : ["turtle","enemy","moving","damaging"],
+                  ">" : ["left-right moving platform","moving platform","solid","moving"],
+                  "d" : ["solid","left downward pipe","pipe","downward pipe"],
+                  "D" : ["solid","right downward pipe","pipe","downward pipe"],
+                  "{" : ["solid","left-top downward pipe","pipe","downward pipe"],
+                  "}" : ["solid","right-top downward pipe","pipe","downward pipe"],
+                  "X" : ["downward piranha plant","piranha plant","enemy","moving","hazard","damaging"],
+                  "v" : ["up-down moving platform","moving platform","solid","moving"]
+                  }
+      }
+      {"player-path-tiles" : {
+                  "-" : ["position not on path"],
+                  "x" : ["position on path"]
+                  }
+      }
+}

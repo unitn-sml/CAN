@@ -1,0 +1,43 @@
+##########################
+# Constraints on cannons #
+##########################
+
+# [height, width, channels]
+
+# assert 'b' stand always below a 'B'
+
+# channels: 0, 1, 2, 3
+# tiles:    'b' (cannon body), 'B' (cannon head), solid, other
+
+shape [2, 1, 4]
+
+# Positions
+#  -------
+# | 0.0.X |
+#  -------
+# | 1.0.X |
+#  -------
+
+#########################
+# 1) Monsters
+#########################
+
+# a cannon body is always below a cannon head
+Implies(X1.0.0, X0.0.1)
+
+# a cannon body is always over a solid tile
+Implies(X0.0.0, X1.0.2)
+
+# a cannon head is always over a cannon body or a solid tile (cannon body is like an optional)
+Implies(X0.0.1, Or(X1.0.0, X1.0.2))
+
+
+#########################
+# 2) One Hot Encodings
+#########################
+
+# X0.0
+Or(And(~X0.0.0, ~X0.0.1, ~X0.0.2, X0.0.3), And(~X0.0.0, ~X0.0.1, X0.0.2, ~X0.0.3), And(~X0.0.0, X0.0.1, ~X0.0.2, ~X0.0.3), And(X0.0.0, ~X0.0.1, ~X0.0.2, ~X0.0.3))
+
+# X1.0
+Or(And(~X1.0.0, ~X1.0.1, ~X1.0.2, X1.0.3), And(~X1.0.0, ~X1.0.1, X1.0.2, ~X1.0.3), And(~X1.0.0, X1.0.1, ~X1.0.2, ~X1.0.3), And(X1.0.0, ~X1.0.1, ~X1.0.2, ~X1.0.3))

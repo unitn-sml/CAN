@@ -1,0 +1,22 @@
+# defining 4x4 window containing a staircase like the following:
+# - -> air
+# + -> solid
+#
+# ---+
+# --++
+# -+++
+# ++++
+
+shape [32]
+
+# row 0
+And(X0, ~X1, X2, ~X3, X4, ~X5, ~X6, X7)
+
+# row 1
+And(X8, ~X9, X10, ~X11, ~X12, X13, ~X14, X15)
+
+# row 2
+And(X16, ~X17, ~X18, X19, ~X20, X21, ~X22, X23)
+
+# row 3
+And(~X24, X25, ~X26, X27, ~X28, X29, ~X30, X31)

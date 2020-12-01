@@ -1,0 +1,52 @@
+{
+    "DATASET_TYPE": "polygons",
+    "IMG_WIDTH": 20,
+    "IMG_HEIGHT": 20,
+    "DATASET_SEED": 42,
+    "DATASET_SIZE": 23040,
+    "POLYGONS_NUMBER": 2,
+    "POLYGONS_PROB": [
+        0.3,
+        0.3,
+        0.4
+    ],
+    "AREA": 25,
+    "TRAINING_TEST_VALIDATION_SPLITS": [
+        18944,
+        4096,
+        0
+    ],
+    "SUFFIX_ID": "_pc_multi_BW",
+    "BINOMIAL": false,
+    "NUM_COLORS": 1,
+    "ANN_SEED": 0,
+    "GENERATOR": "Gan20Generator",
+    "DISCRIMINATOR": "Can20Discriminator32LayerAuto",
+    "GENERATOR_LOSS": "BganGeneratorLossMulti",
+    "DISCRIMINATOR_LOSS": "BganDiscriminatorLossMulti",
+    "DISCRIMINATOR_SOLVER": "DiscriminatorAdamSolver",
+    "GENERATOR_SOLVER": "GeneratorAdamSolver",
+    "GENERATOR_STATISTICS": [
+        "MultinomialGeneratorStatistics",
+        "GeneratorLossStatistics"
+    ],
+    "DISCRIMINATOR_STATISTICS": [
+        "CanDiscriminatorStatistics",
+        "DiscriminatorLossStatistics"
+    ],
+    "BATCH_SIZE": 64,
+    "NUM_BGAN_SAMPLES": 20,
+    "LEARNING_RATE": 1e-4,
+    "NUM_ITER_GENERATOR": 1,
+    "NUM_ITER_DISCRIMINATOR": 1,
+    "LEAKINESS": 0.2,
+    "z_dim": 64,
+    "h_dim": 64,
+    "LEARNING_EPOCHS": 250,
+    "EVAL_NOISE_SEED": 42,
+    "COMPUTABLES": [
+        "AreaAndAllParityCheckMulti20"
+    ],
+    "DEBUG_CONSTRAINTS": true,
+    "CONSTRAINTS_FROM_EPOCH": 0
+}

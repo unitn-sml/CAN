@@ -1,0 +1,73 @@
+{
+    "_comment": "THIS IS A TEMPLATE FILE, DO NOT USE IT WITH REAL EXPERIMENTS",
+    "_comment": "actual values of all the keys are only given as an example",
+    
+    "_comment": "DATASET_TYPE should be one of ['SAT', 'polygons', 'floor_planning', 'LEVEL_GEN'] or your custom DATASET_TYPE",
+    "DATASET_TYPE": "polygons",
+
+    "_comment": "Shape of input data",
+    "SHAPE": [20,20,1],
+
+    "_comment": "seed used to generate sample and to train/test the NN",
+    "ANN_SEED": 444,
+
+    "_comment": "name of the generator class",
+    "GENERATOR": "Gan20Generator",
+
+    "_comment": "name of the discriminator class",
+    "DISCRIMINATOR": "Can20Discriminator32LayerAuto",
+
+    "_comment": "can be the name of the generator loss class, a list of losses or a list of pairs (loss name, weight)",
+    "GENERATOR_LOSS": "BganGeneratorLoss",
+
+    "_comment": "can be the name of the discriminator loss class, a list of losses or a list of pairs (loss name, weight)",
+    "DISCRIMINATOR_LOSS": "BganDiscriminatorLoss",
+
+    "_comment": "the generator solver/optimizer",
+    "GENERATOR_SOLVER": "GeneratorAdamSolver",
+
+    "_comment": "the discriminator solver/optimizer",
+    "DISCRIMINATOR_SOLVER": "DiscriminatorAdamSolver",
+
+    "_comment": "a list with 0 or more computables",
+    "COMPUTABLES": ["FloorPlanningConstraints"],
+
+    "_comment": "a list of 0 or more statistics that will be computed during the generator step. They should interest the generator nodes",
+    "GENERATOR_STATISTICS": ["MultinomialGeneratorStatistics"],
+
+    "_comment": "a list of 0 or more statistics that will be computed during the discriminator step. They should interest the discriminator nodes",
+    "DISCRIMINATOR_STATISTICS": ["GanDiscriminatorStatistics"],
+
+    "_comment": "the number of element in a batch",
+    "BATCH_SIZE": 64,
+
+    "_comment": "given a batch of probability distributions in output from the generator, num_bgan_samples is the number of samples generated for each of them",
+    "NUM_BGAN_SAMPLES": 20,
+
+    "_comment": "the learning rate used by the training algorithm",
+    "LEARNING_RATE": 1e-4,
+
+    "_comment": "rate at which update the generators weights",
+    "NUM_ITER_GENERATOR": 1,
+
+    "_comment": "rate at which update the discriminator weights",
+    "NUM_ITER_DISCRIMINATOR": 1,
+
+    "_comment": "leakiness of the leaky ReLU activation function for inputs < 0",
+    "LEAKINESS": 0.2,
+
+    "_comment": "size of the noisy input vector z",
+    "z_dim": 64,
+
+    "_comment": "number of training epochs",
+    "LEARNING_EPOCHS": 250,
+
+    "_comment": "how to split the dataset in training, test and validation",
+    "TRAINING_TEST_VALIDATION_SPLITS": [18944, 4096, 0],
+
+    "_comment": "seed for the generation of evaluation samples",
+    "EVAL_NOISE_SEED": 42,
+
+    "_comment": "Start constraints from a specific epoch, not mandatory",
+    "CONSTRAINTS_FROM_EPOCH": null
+}

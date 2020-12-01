@@ -1,0 +1,363 @@
+{
+    "jumps": [
+        [
+            [
+                0,
+                -1
+            ],
+            [
+                1,
+                -1
+            ]
+        ],
+        [
+            [
+                0,
+                -1
+            ],
+            [
+                0,
+                -2
+            ],
+            [
+                1,
+                -2
+            ]
+        ],
+        [
+            [
+                0,
+                -1
+            ],
+            [
+                0,
+                -2
+            ],
+            [
+                0,
+                -3
+            ],
+            [
+                1,
+                -3
+            ]
+        ],
+        [
+            [
+                0,
+                -1
+            ],
+            [
+                0,
+                -2
+            ],
+            [
+                0,
+                -3
+            ],
+            [
+                0,
+                -4
+            ],
+            [
+                1,
+                -4
+            ]
+        ],
+        [
+            [
+                0,
+                -1
+            ],
+            [
+                0,
+                -2
+            ],
+            [
+                1,
+                -2
+            ],
+            [
+                1,
+                -3
+            ],
+            [
+                1,
+                -4
+            ],
+            [
+                0,
+                -4
+            ]
+        ],
+        [
+            [
+                0,
+                -1
+            ],
+            [
+                0,
+                -2
+            ],
+            [
+                0,
+                -3
+            ],
+            [
+                1,
+                -3
+            ],
+            [
+                1,
+                -4
+            ],
+            [
+                1,
+                -5
+            ],
+            [
+                0,
+                -5
+            ]
+        ],
+        [
+            [
+                1,
+                0
+            ],
+            [
+                1,
+                -1
+            ],
+            [
+                1,
+                -2
+            ],
+            [
+                2,
+                -2
+            ],
+            [
+                2,
+                -3
+            ],
+            [
+                3,
+                -3
+            ],
+            [
+                3,
+                -4
+            ],
+            [
+                4,
+                -4
+            ],
+            [
+                5,
+                -4
+            ],
+            [
+                5,
+                -3
+            ],
+            [
+                6,
+                -3
+            ],
+            [
+                7,
+                -3
+            ],
+            [
+                7,
+                -2
+            ],
+            [
+                8,
+                -2
+            ],
+            [
+                8,
+                -1
+            ]
+        ],
+        [
+            [
+                1,
+                0
+            ],
+            [
+                1,
+                -1
+            ],
+            [
+                1,
+                -2
+            ],
+            [
+                2,
+                -2
+            ],
+            [
+                2,
+                -3
+            ],
+            [
+                3,
+                -3
+            ],
+            [
+                3,
+                -4
+            ],
+            [
+                4,
+                -4
+            ],
+            [
+                5,
+                -4
+            ],
+            [
+                6,
+                -4
+            ],
+            [
+                6,
+                -3
+            ],
+            [
+                7,
+                -3
+            ],
+            [
+                7,
+                -2
+            ],
+            [
+                8,
+                -2
+            ],
+            [
+                8,
+                -1
+            ]
+        ]
+    ],
+    "solid": [
+        "X",
+        "Q",
+        "S",
+        "?",
+        "B",
+        "b",
+        "[",
+        "]",
+        "<",
+        ">"
+    ],
+    "passable": [
+        "-",
+        "E",
+        "o"
+    ],
+    "solid_indexes": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        11,
+        12
+    ],
+    "passable_indexes": [
+        2,
+        5,
+        10
+    ],
+    "tiles_files_names": {
+        "0": "solid_unbreakable.png",
+        "1": "solid_breakable.png",
+        "2": "air.png",
+        "3": "full_question_block.png",
+        "4": "empty_question_block.png",
+        "5": "enemy.png",
+        "6": "pipe_top_left.png",
+        "7": "pipe_top_right.png",
+        "8": "pipe_down_left.png",
+        "9": "pipe_down_right.png",
+        "10": "coin.png",
+        "11": "bomb_up.png",
+        "12": "bomb_down.png"
+    },
+    "tiles": {
+        "X": [
+            "solid",
+            "ground"
+        ],
+        "S": [
+            "solid",
+            "breakable"
+        ],
+        "-": [
+            "passable",
+            "empty"
+        ],
+        "?": [
+            "solid",
+            "question block",
+            "full question block"
+        ],
+        "Q": [
+            "solid",
+            "question block",
+            "empty question block"
+        ],
+        "E": [
+            "enemy",
+            "damaging",
+            "hazard",
+            "moving"
+        ],
+        "<": [
+            "solid",
+            "top-left pipe",
+            "pipe"
+        ],
+        ">": [
+            "solid",
+            "top-right pipe",
+            "pipe"
+        ],
+        "[": [
+            "solid",
+            "left pipe",
+            "pipe"
+        ],
+        "]": [
+            "solid",
+            "right pipe",
+            "pipe"
+        ],
+        "o": [
+            "coin",
+            "collectable",
+            "passable"
+        ],
+        "B": [
+            "Cannon top",
+            "cannon",
+            "solid",
+            "hazard"
+        ],
+        "b": [
+            "Cannon bottom",
+            "cannon",
+            "solid"
+        ]
+    }
+}

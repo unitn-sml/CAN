@@ -1,0 +1,47 @@
+{
+    "DATASET_TYPE": "MNIST_PARITY_CHECK_20000",
+    "SHAPE": [28, 28, 1],
+    "DATASET_SEED": 42,
+    "DATASET_SIZE": 20000,
+    "TRAINING_TEST_VALIDATION_SPLITS": [
+        18000,
+        2000,
+        0
+    ],
+    "ANN_SEED": 0,
+    "GENERATOR": "Gan28GumbleBinomialGenerator",
+    "DISCRIMINATOR": "Sn28Discriminator",
+    "GENERATOR_LOSS":[["GanGeneratorLoss", 1.0], ["SemanticLoss_mnist_pc_custom_full",1.0]],
+    "DISCRIMINATOR_LOSS": "GanDiscriminatorLoss",
+    "DISCRIMINATOR_SOLVER": "DiscriminatorAdamSolver",
+    "GENERATOR_SOLVER": "GeneratorAdamSolver",
+    "GENERATOR_STATISTICS": [
+        "BinomialGeneratorStatistics",
+        "GeneratorLossStatistics",
+	"WMC_mnist_pc_custom_full",
+	"VNU_mnist_pc_custom_full",
+	"GeneratorGradient",
+	"DiscriminatorGradient"
+    ],
+    "DISCRIMINATOR_STATISTICS": [
+        "DiscriminatorLossStatistics",
+	"DiscriminatorLogitsStatistics"
+    ],
+    "BATCH_SIZE": 128,
+    "DISCRIMINATOR_LEARNING_RATE": 1e-4,
+    "GENERATOR_LEARNING_RATE": 1e-4,
+    "NUM_ITER_GENERATOR": 1,
+    "NUM_ITER_DISCRIMINATOR": 1,
+    "LEAKINESS": 0.2,
+    "z_dim": 64,
+    "h_dim": 64,
+    "LEARNING_EPOCHS": 250,
+    "EVAL_NOISE_SEED": 42,
+    "COMPUTABLES": [
+        "RandomUniform"
+    ],
+    "HARD_SAMPLING": false,
+    "SEMANTIC_LOSS_FROM_EPOCH": 0,
+    "EVAL_IMAGES": 15,
+    "SEMANTIC_LOSS_INPUT_IS_PROBABILITIES": true
+}
