@@ -27,7 +27,7 @@ Constrained Adversarial Networks has been presented in the [paper](https://paper
 
 ## Tested environment
 
-We run out experiments in the following environment:
+We run our experiments in the following environment:
 - Ubuntu 16.04 LTS
 - Cuda 10.0
 - libcudnn7=7.4.1.5-1
