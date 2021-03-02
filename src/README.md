@@ -49,14 +49,29 @@ CAN for level 3-3
 bash launch/level_generation/mario-reachability-3-3.sh
 ```
 
-
-### PIER PUT YOUR SCRIPTS HERE
-
+### Constraints on MolGAN
+MolGAN baseline logp sas qed
 ```bash
-prova prova sah! sah!
-
+cd scripts
+bash run_MOLGAN_experiment_NO_SL_logp_sas_qed.sh
+```
+MolGAN baseline uniqueness
+```bash
+cd scripts
+bash run_MOLGAN_experiment_NO_SL_uniqueness.sh
 ```
 
+MolGAN SL logp sas qed
+```bash
+cd scripts
+bash run_MOLGAN_experiment_SL_logp_sas_qed.sh
+```
+
+MolGAN SL uniqueness
+```bash
+cd scripts
+bash run_MOLGAN_experiment_SL_uniqueness.sh
+```
 # Table of contents
 1. [Modules](#modules)  
 1.1 [Generators](#generators)  
